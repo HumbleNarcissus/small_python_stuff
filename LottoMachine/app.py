@@ -1,5 +1,5 @@
 '''
-Let Python draw 7 numbers for you! Maybe that will be your lucky numbers.
+Let Python draw 6 numbers for you! Maybe that will be your lucky numbers.
 Author: Maciej Tarach
 '''
 
@@ -9,7 +9,7 @@ class LottoMachine:
     '''
     Class that simulate the lotto machine.
     numbers - all numbers from 1 to 49 which machine will be drawing.
-    result - the 7 numbers randomized from numbers variable
+    result - the 6 numbers randomized from numbers variable
     '''
     #init
     def __init__(self):
@@ -21,9 +21,9 @@ class LottoMachine:
         for x in range(1, 50):
             self.numbers.append(x)
 
-    #get 7 numbers
+    #get 6 numbers
     def randomize(self):
-        for num in range(7):
+        for num in range(6):
             x = random.choice(self.numbers)
             self.numbers.remove(x)
             self.result.append(x)
